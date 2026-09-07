@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Jobs — AI Access Observatory</title>
-<meta name="description" content="How AI is changing employment, digital work and economic opportunity across Africa.">
+<meta name="description" content="How AI is changing employment, digital work and economic opportunity across Africa: the deep dive plus the live tracker.">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="dim-jobs" data-bucket="jobs">
 <div class="wrap">
   <nav>
     <div class="lock">
@@ -19,31 +19,91 @@
     <div class="navr">
       <a href="index.html">Dashboard</a>
       <a class="on" href="jobs.html">Jobs</a>
-      <a href="access.html">Access</a>
-      <a href="infra.html">Infrastructure</a>
+      <a class="" href="access.html">Access</a>
+      <a class="" href="infra.html">Infrastructure</a>
       <a href="methodology.html">Methodology</a>
       <a href="index.html#tracker">Tracker</a>
       <a class="btn g" href="index.html#weekly">The Weekly</a>
     </div>
   </nav>
-  <div class="page">
-    <div class="k">Dimension · Jobs</div>
-    <h1>How AI is changing work in Africa</h1>
-    <p class="note">This page is part of the redesign preview. The full Jobs analysis and long-form research move here in the next phase. The live feed is already running on the <a href="index.html#tracker">dashboard</a>.</p>
-    <h2>What the dimension covers</h2>
-    <p>Automation exposure across African labour markets, the business process outsourcing sector, freelance and digital work, and the employment effects of AI adoption.</p>
-    <ul>
-      <li>BPO and call-centre exposure</li>
-      <li>Freelance and platform work demand</li>
-      <li>Digital skills and the work ladder</li>
-      <li>Layoffs and hiring shifts tied to AI</li>
+  <div class="page dim">
+    <div class="k"><span class="kdot"></span>Dimension · Jobs · Live essay and tracker</div>
+    <h1>The <span>Jobs Squeeze</span></h1>
+  <p class=\"lede\">How AI automation is dismantling Africa's digital jobs ladder &mdash; the BPO sector and freelance economy at risk.</p>
+    <div class="essay">
+
+  <div class="sec">
+    <h2>Overview</h2>
+    <p>Africa's digital economy strategy was built on a simple premise: compete on cost. The business process outsourcing (BPO) sector grew into a <strong>$35 billion industry</strong> employing over a million people. Alongside it, a nascent freelance economy connected African professionals to global clients through platforms like Upwork, Fiverr, and Toptal.</p>
+    <p>Generative AI is dismantling both. The labour arbitrage model &mdash; African workers competing on wages with the Global North &mdash; is being undercut by AI at near-zero marginal cost.</p>
+    <div class="statgrid">
+      <div class="stat"><div class="num">40%</div><div class="lbl">BPO tasks affected by 2030</div></div>
+      <div class="stat"><div class="num">$35B</div><div class="lbl">African BPO sector value</div></div>
+      <div class="stat"><div class="num">1M+</div><div class="lbl">Africans in BPO/ITES</div></div>
+      <div class="stat"><div class="num">-21%</div><div class="lbl">Freelance demand since 2022</div></div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2>The BPO Sector Under Threat</h2>
+    <p>Africa's BPO industry spans customer service, data processing, finance &amp; accounting, human resources, and IT support. Kenya, Nigeria, Ghana, South Africa, and Ethiopia are the largest hubs. A <strong>Mastercard Foundation report</strong> estimates that <strong>40% of tasks</strong> in the sector could be affected by generative AI by 2030.</p>
+    <p>The most exposed segment? <strong>Entry-level workers</strong>, who make up <strong>68%</strong> of the BPO workforce. Over half of their tasks &mdash; data entry, basic transcription, standard customer service queries &mdash; are directly automatable by current-generation AI.</p>
+    <div class="callout">
+      <h4>Most at-risk roles</h4>
+      <p><strong>Data entry &amp; processing</strong> &mdash; Near-full automation by current LLMs and vision models.<br>
+      <strong>Basic customer service</strong> &mdash; Tier-1 support increasingly handled by AI agents.<br>
+      <strong>Transcription &amp; translation</strong> &mdash; Whisper and GPT-class models outperform human contractors on cost.<br>
+      <strong>Content moderation</strong> &mdash; AI moderation tools replacing human review teams.<br>
+      <strong>Basic accounting</strong> &mdash; Invoice processing and reconciliation increasingly automated.</p>
+    </div>
+    <p>The KPMG 2025 Africa BPO Survey found that <strong>58% of firms</strong> plan to integrate AI tools within 2 years, and <strong>34%</strong> expect headcount reductions as a direct result. Early data from Kenya (Q2 2026) shows the first confirmed AI-driven layoffs: <strong>12% of customer service roles</strong> eliminated across 14 major BPO firms surveyed.</p>
+  </div>
+
+  <div class="sec">
+    <h3>The Freelance Squeeze</h3>
+    <p>African freelancers had begun accessing global digital work at scale. Platforms like Upwork, Fiverr, and Toptal connected writers, designers, developers, and virtual assistants in Lagos, Nairobi, Accra, and Cape Town to clients in the US, UK, and Europe.</p>
+    <p>Data from the <strong>Jobtech Alliance</strong> and industry reports shows the trend reversing sharply:</p>
+    <div class="statgrid">
+      <div class="stat"><div class="num">-33%</div><div class="lbl">Writing jobs (Upwork)</div></div>
+      <div class="stat"><div class="num">-19%</div><div class="lbl">Translation jobs</div></div>
+      <div class="stat"><div class="num">-16%</div><div class="lbl">Customer service jobs</div></div>
+      <div class="stat"><div class="num">-21%</div><div class="lbl">Overall freelance demand</div></div>
+    </div>
+    <p>These declines are since Q4 2022 &mdash; the launch of ChatGPT. Writing, translation, and customer service are precisely the categories where African freelancers had gained the most traction due to English proficiency and competitive rates.</p>
+  </div>
+
+  <div class="sec">
+    <h3>Development Ladder Implications</h3>
+    <p>The broader concern goes beyond immediate job losses. The BPO and freelance sectors functioned as a <strong>development ladder</strong> &mdash; entry-level digital work that built skills, generated foreign exchange, and created pathways into higher-value work. If that ladder is removed before African economies have built alternative growth engines, the consequences are structural.</p>
+    <p>Economist <strong>Deric Cheng</strong> (AI Frontiers, 2025) argues that AI could undermine emerging economies by dismantling the very service export model that countries like India, the Philippines, and Kenya used to climb the value chain.</p>
+    <div class="source-box">
+      <strong>Sources:</strong> Mastercard Foundation (2025) &middot; KPMG Africa BPO Survey (2025) &middot; Jobtech Alliance (2025-26) &middot; Upwork data &middot; Business Daily Africa (Q2 2026) &middot; Deric Cheng, AI Frontiers (2025)
+    </div>
+  </div>
+
+  <div class="sec">
+    <h3>What We're Tracking</h3>
+    <ul style="padding-left:1.25rem;color:#475569;font-size:0.9rem;">
+      <li>Quarterly BPO employment data from Kenya, Nigeria, SA, Ghana, Ethiopia</li>
+      <li>Freelance platform demand trends (Upwork, Fiverr, Toptal)</li>
+      <li>AI tool adoption announcements from major BPO firms</li>
+      <li>Government reskilling and transition programs</li>
+      <li>Academic papers on AI &amp; labour displacement in developing economies</li>
+      <li>New job creation in AI-adjacent fields (data annotation, AI safety, localisation)</li>
     </ul>
-    <p><a href="index.html#tracker">Browse the Jobs feed →</a></p>
+  </div>
+  </div>
+    <section class="feedsec">
+      <h2>The live Jobs feed</h2>
+      <p class="fsub">Every tracked item on this dimension, newest first, each linked to its source. Full record also on the <a href="index.html#tracker">dashboard</a>.</p>
+      <div id="feed"></div>
+    </section>
   </div>
   <footer>
     <div>© 2026 Astrolabe Africa · The AI Access Observatory</div>
     <div>Astrolabe Media · Astrolabe Research · Astrolabe Data</div>
   </footer>
 </div>
+<script src="app.js"></script>
 </body>
 </html>
