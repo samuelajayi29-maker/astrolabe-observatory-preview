@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Infrastructure — AI Access Observatory</title>
-<meta name="description" content="Whether Africa has the computing, connectivity, electricity and data-centre infrastructure to participate in the AI economy.">
+<meta name="description" content="The ground beneath Africa's AI economy: data centres, compute and connectivity, plus the live tracker.">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="dim-infra" data-bucket="infra">
 <div class="wrap">
   <nav>
     <div class="lock">
@@ -18,32 +18,113 @@
     </div>
     <div class="navr">
       <a href="index.html">Dashboard</a>
-      <a href="jobs.html">Jobs</a>
-      <a href="access.html">Access</a>
+      <a class="" href="jobs.html">Jobs</a>
+      <a class="" href="access.html">Access</a>
       <a class="on" href="infra.html">Infrastructure</a>
       <a href="methodology.html">Methodology</a>
       <a href="index.html#tracker">Tracker</a>
       <a class="btn g" href="index.html#weekly">The Weekly</a>
     </div>
   </nav>
-  <div class="page">
-    <div class="k">Dimension · Infrastructure</div>
-    <h1>The ground beneath Africa's AI economy</h1>
-    <p class="note">This page is part of the redesign preview. The full Infrastructure analysis and long-form research move here in the next phase. The live feed is already running on the <a href="index.html#tracker">dashboard</a>.</p>
-    <h2>What the dimension covers</h2>
-    <p>Computing capacity, connectivity, electricity, data centres and the buildout beneath the continent's AI ambitions.</p>
-    <ul>
-      <li>Data-centre capacity and construction</li>
-      <li>Compute and processing-chip availability</li>
-      <li>Grid, energy and connectivity constraints</li>
-      <li>National AI strategies and policy signals</li>
+  <div class="page dim">
+    <div class="k"><span class="kdot"></span>Dimension · Infrastructure · Live essay and tracker</div>
+    <h1>The <span>Infrastructure Squeeze</span></h1>
+  <p class=\"lede\">Africa holds less than 1% of global data centre capacity. As AI becomes more compute-intensive, the infrastructure gap widens.</p>
+    <div class="essay">
+
+  <!-- Overview -->
+  <div class="sec">
+    <h2>Overview</h2>
+    <p>The infrastructure squeeze is the most structural of the three. It cannot be solved by pricing adjustments or policy alone &mdash; it requires physical data centres, submarine cables, reliable electricity, and skilled engineers. Africa is starting from a position of extreme deficit.</p>
+
+    <div class="statgrid">
+      <div class="stat"><div class="num">&lt;1%</div><div class="lbl">Global data centre capacity</div></div>
+      <div class="stat"><div class="num">18%</div><div class="lbl">Share of world population</div></div>
+      <div class="stat"><div class="num">7/54</div><div class="lbl">Countries with AI strategy</div></div>
+      <div class="stat"><div class="num">3</div><div class="lbl">Countries with AI compute hubs</div></div>
+    </div>
+  </div>
+
+  <!-- Data Centre Gap -->
+  <div class="sec">
+    <h2>The Data Centre Gap</h2>
+    <p>Africa's total data centre capacity is estimated at less than <strong>200MW</strong> &mdash; roughly equivalent to a single large hyperscale campus in Virginia or Northern Virginia. The entire continent has fewer data centres than the city of London.</p>
+
+    <p>This capacity is concentrated in just three countries: <strong>South Africa</strong> (the dominant hub, with ~60% of total capacity), <strong>Nigeria</strong>, and <strong>Kenya</strong>. Most African countries have effectively zero commercial data centre capacity.</p>
+
+    <div class="callout">
+      <h4>The capacity math</h4>
+      <p>Training a single frontier-class LLM can consume <strong>gigawatt-months</strong> of compute. A single training run for GPT-5.6 Sol or Claude Opus 4.8 likely required more electricity than all of Africa's data centres combined consume in a year. The inference gap is smaller but still vast &mdash; serving millions of users requires distributed, low-latency infrastructure that simply doesn't exist at scale on the continent.</p>
+    </div>
+  </div>
+
+  <!-- Hyperscaler Activity -->
+  <div class="sec">
+    <h3>Hyperscaler Activity</h3>
+    <p>Progress is being made, but slowly:</p>
+
+    <div class="map-callout">
+      <h4>Hyperscaler cloud regions in Africa</h4>
+      <div class="row"><span>AWS Africa (Cape Town)</span><span class="v">Live (2020)</span></div>
+      <div class="row"><span>Microsoft Azure (Cape Town, Johannesburg)</span><span class="v">Live (2022)</span></div>
+      <div class="row"><span>Google Cloud (Nairobi)</span><span class="v">Target 2028</span></div>
+      <div class="row"><span>Oracle (planned &mdash; SA, Nigeria)</span><span class="v">Announced</span></div>
+      <div class="row"><span>Equinix (NG, SA expansions)</span><span class="v">In progress</span></div>
+      <div class="row"><span>Raxio Data Centres (multiple countries)</span><span class="v">Expanding</span></div>
+    </div>
+
+    <p>Google's Nairobi region announcement (July 2026) is significant &mdash; it will be the first East African hyperscale cloud region &mdash; but the 2028 target date means it's still <strong>two years away</strong>. The gap between announcement and operation matters when AI model generations are being measured in weeks.</p>
+  </div>
+
+  <!-- Connectivity -->
+  <div class="sec">
+    <h3>Connectivity &amp; Energy</h3>
+    <p>Data centres are useless without connectivity and power. Submarine cable capacity to Africa has grown significantly &mdash; projects like <strong>2Africa</strong>, <strong>Equiano</strong>, and <strong>SEA-ME-WE 5</strong> have added substantial bandwidth &mdash; but last-mile connectivity remains expensive and unreliable.</p>
+
+    <p>Energy is the harder constraint. Data centres need <strong>reliable, 24/7 power</strong>. In Nigeria, the national grid experiences multiple collapses per year; in South Africa, load-shedding (planned blackouts) has been a recurring problem. Off-grid solutions (solar + battery + diesel) add cost that makes African data centres more expensive to operate than their European or US counterparts. This creates a vicious cycle: higher costs mean less investment, which means fewer facilities, which means higher costs for those that do exist.</p>
+
+    <div class="callout-amber">
+      <h4>The energy cost penalty</h4>
+      <p>A 2025 study by the <strong>African Data Centres Association</strong> found that the total cost of ownership for a medium-sized data centre in Lagos is approximately <strong>30&ndash;40% higher</strong> than an equivalent facility in Frankfurt or Virginia, driven primarily by energy costs and backup generation requirements.</p>
+    </div>
+  </div>
+
+  <!-- AI Strategies -->
+  <div class="sec">
+    <h3>National AI Strategies</h3>
+    <p>Only <strong>7 of 54</strong> African nations have published national AI strategies: South Africa, Nigeria, Kenya, Rwanda, Mauritius, Tunisia, and Ghana. Most are aspirational rather than fully funded. Few include specific provisions for compute infrastructure, data centre development, or energy planning for AI workloads.</p>
+    <p>The <strong>African Union's Continental AI Strategy</strong> (draft, 2025) identifies infrastructure as a priority but has no binding mechanism for member states to act on it.</p>
+  </div>
+
+  <!-- What to track -->
+  <div class="sec">
+    <h3>What We're Tracking</h3>
+    <ul style="padding-left:1.25rem;color:#475569;font-size:0.9rem;">
+      <li>Data centre construction announcements and timelines across Africa</li>
+      <li>Hyperscaler cloud region launches and service expansions</li>
+      <li>Submarine cable projects and bandwidth pricing trends</li>
+      <li>National AI strategy publications and implementation progress</li>
+      <li>Energy infrastructure developments relevant to compute</li>
+      <li>Edge computing and distributed inference initiatives</li>
+      <li>Academic research on efficient inference for low-resource settings</li>
     </ul>
-    <p><a href="index.html#tracker">Browse the Infrastructure feed →</a></p>
+  </div>
+
+  <div class="source-box">
+    <strong>Sources:</strong> WEF &middot; GSMA &middot; Xalam Analytics &middot; African Data Centres Association &middot; TechCabal &middot; Google Cloud (Jul 2026) &middot; African Union Continental AI Strategy (draft) &middot; UN population data
+  </div>
+  </div>
+    <section class="feedsec">
+      <h2>The live Infrastructure feed</h2>
+      <p class="fsub">Every tracked item on this dimension, newest first, each linked to its source. Full record also on the <a href="index.html#tracker">dashboard</a>.</p>
+      <div id="feed"></div>
+    </section>
   </div>
   <footer>
     <div>© 2026 Astrolabe Africa · The AI Access Observatory</div>
     <div>Astrolabe Media · Astrolabe Research · Astrolabe Data</div>
   </footer>
 </div>
+<script src="app.js"></script>
 </body>
 </html>
