@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Access Observatory — Astrolabe Data</title>
+<meta name="description" content="A daily, country-level record of how artificial intelligence is changing jobs, access and infrastructure in Africa. Sourced, open and independent.">
+<meta property="og:title" content="AI Access Observatory — Astrolabe Data">
+<meta property="og:description" content="Africa's AI economy, measured daily. Jobs, access and infrastructure, updated every day.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <div class="lock">
+      <svg viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="84" fill="none" stroke="#111" stroke-width="7"/><circle cx="128" cy="72" r="7.5" fill="#c9a227"/></svg>
+      <div><div class="lw">Astrolabe</div><div class="la">DATA</div></div>
+    </div>
+    <div class="navr">
+      <a class="on" href="index.html">Dashboard</a>
+      <a href="jobs.html">Jobs</a>
+      <a href="access.html">Access</a>
+      <a href="infra.html">Infrastructure</a>
+      <a href="methodology.html">Methodology</a>
+      <a href="index.html#tracker">Tracker</a>
+      <a class="btn g" href="index.html#weekly">The Weekly</a>
+      <a class="btn" href="index.html#tracker">Explore the dashboard</a>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <div>
+      <div class="k">The AI Access Observatory</div>
+      <h1>Africa's AI economy, <em>measured daily.</em></h1>
+      <p class="sub">A daily, country-level record of how artificial intelligence is changing jobs, access and infrastructure. Sourced, open and independent.</p>
+      <div class="cta"><a class="btn" href="#tracker">Explore the dashboard</a><a class="btn g" href="methodology.html">Read the methodology</a></div>
+      <div class="trust"><span><b id="t-total">—</b> tracked stories</span><span><b>54</b> countries</span><span><b>Daily</b> updates</span><span><b>Open</b> sources</span></div>
+    </div>
+    <div class="app" id="heroPanel">
+      <div class="ah"><span>Live feed</span><span class="live" id="t-updated">Updated daily</span></div>
+      <div id="heroMini"></div>
+      <div class="foot"><span id="t-total2">—</span><span>Sources listed per item</span></div>
+    </div>
+  </div>
+
+  <section class="sec">
+    <h2>What the Observatory tracks</h2>
+    <p class="lead">Three forces decide whether Africa participates in the AI economy. The Observatory measures all three, every day.</p>
+    <div class="feat">
+      <div class="fc"><div class="top"><span class="ic j">J</span><h3>Jobs</h3><span class="cnt" id="c-jobs">—</span></div><div class="big">40<small>%</small></div><p>of business process outsourcing tasks could be automated by 2030. The $35bn sector employs over 1m Africans.</p><a href="jobs.html">Jobs data →</a></div>
+      <div class="fc"><div class="top"><span class="ic a">A</span><h3>Access &amp; Pricing</h3><span class="cnt" id="c-access">—</span></div><div class="big">$1–$75</div><p>Frontier model output pricing spans a 75× range, while AI demand pushes memory and device prices up.</p><a href="access.html">Access data →</a></div>
+      <div class="fc"><div class="top"><span class="ic i">I</span><h3>Infrastructure</h3><span class="cnt" id="c-infra">—</span></div><div class="big">&lt;1<small>%</small></div><p>of global data-centre capacity sits in Africa, home to 18% of the world's people. Only 7 of 54 countries have AI strategies.</p><a href="infra.html">Infrastructure data →</a></div>
+    </div>
+  </section>
+
+  <section class="sec" id="tracker">
+    <div class="th-row">
+      <div><h2>Live tracker</h2><p class="lead" id="t-countline">Every entry links to its source. Newest first.</p></div>
+      <a class="dl" href="data/items.json">Download the data (JSON)</a>
+    </div>
+    <div class="tgrid" id="feed">
+      <noscript><p style="grid-column:1/-1;color:#5a6472;font-size:14px">The live feed needs JavaScript. The raw data is available at <a href="data/items.json">data/items.json</a>.</p></noscript>
+    </div>
+  </section>
+
+  <div class="strip">
+    <div class="st2"><div class="n">1<small>x</small></div><div class="l">daily update cadence, where peers publish annually</div></div>
+    <div class="st2"><div class="n" id="s-total">—</div><div class="l">sourced stories tracked across the three dimensions</div></div>
+    <div class="st2"><div class="n">7<small>/54</small></div><div class="l">countries with national AI strategies, tracked live</div></div>
+    <div class="st2"><div class="n">32<small>%</small></div><div class="l">year-on-year fall in freelance writing work, measured</div></div>
+  </div>
+
+  <section class="sec">
+    <h2>Built for decisions</h2>
+    <p class="lead">The same daily evidence serves every side of the table.</p>
+    <div class="aud">
+      <div class="au"><h4>Policymakers</h4><p>Track whether national AI strategies are meeting reality, quarter by quarter.</p></div>
+      <div class="au"><h4>Investors</h4><p>Price the infrastructure gap and the labour exposure behind every deal thesis.</p></div>
+      <div class="au"><h4>Corporates</h4><p>Plan adoption against the actual cost of access and the state of the grid.</p></div>
+      <div class="au"><h4>Researchers</h4><p>Download the source data and methodology instead of scraping headlines.</p></div>
+    </div>
+  </section>
+
+  <div class="band" id="weekly">
+    <div><h3>Follow Africa's AI economy</h3><p>The Astrolabe Weekly: what changed, one email, every week.</p></div>
+    <form onsubmit="return false"><input type="email" placeholder="you@example.com" aria-label="Email address"><button>Join the weekly</button></form>
+  </div>
+
+  <footer>
+    <div>© 2026 Astrolabe Africa · The AI Access Observatory · Jobs × Access × Infrastructure</div>
+    <div>Astrolabe Media · Astrolabe Research · Astrolabe Data</div>
+  </footer>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
