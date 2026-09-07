@@ -32,7 +32,7 @@ Each item: `{t: title, u: url, s: source, d: date label, dot: category}`. Dates 
 - [x] Data migration and dedupe (242 items)
 - [x] Placeholder dimension + methodology pages
 - [ ] Phase 2: updater writes `items.json` + CSV in single-commit pushes
-- [ ] Phase 3: migrate the deep-dive editorial essays into the dimension pages
+- [x] Phase 3: deep-dive essays migrated into the dimension pages (each above its live feed)
 - [ ] Newsletter form wired to a provider
 - [ ] Swap live after QA; current repo tagged for rollback
 
