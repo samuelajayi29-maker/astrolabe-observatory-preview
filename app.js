@@ -79,11 +79,14 @@
   function load() {
     var feed = document.getElementById("feed");
     if (!feed) return;
+    var only = document.body.getAttribute("data-bucket");
+    var keys = Object.keys(DIM);
+    if (only && DIM[only]) { keys = [only]; feed.classList.add("single"); }
     fetch("data/items.json", { cache: "no-store" })
       .then(function (r) { if (!r.ok) throw new Error("http " + r.status); return r.json(); })
       .then(function (data) {
         var total = 0;
-        Object.keys(DIM).forEach(function (key) {
+        keys.forEach(function (key) {
           var items = (data.buckets && data.buckets[key] && data.buckets[key].items) || [];
           total += items.length;
           feed.appendChild(buildColumn(key, items));
